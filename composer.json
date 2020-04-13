@@ -1,0 +1,37 @@
+{
+    "name": "php-rest-api-with-slim",
+    "description": "An example of a small REST API application on Slim.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nik R.",
+            "email": "poraduem@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "ext-exif": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "ext-pdo": "*",
+        "doctrine/dbal": "^2.9",
+        "monolog/monolog": "^1.17",
+        "pimple/pimple": "^3.2",
+        "slim/php-view": "^2.0",
+        "slim/slim": "^3.1",
+        "symfony/dotenv": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": ["app/"]
+        }
+    },
+    "config": {
+        "process-timeout": 0,
+        "sort-packages": true
+    },
+    "scripts": {
+        "dev": "APP_DEV=true php -S localhost:8084 -t public"
+    }
+}
